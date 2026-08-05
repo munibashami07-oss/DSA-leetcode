@@ -44,3 +44,18 @@ int main()
   }  
     return 0;
 }
+
+// Now the heap has:
+
+// (2,2)
+// (2,3)
+
+// Both have the same frequency.
+
+// So the tie is broken by the second value:
+
+// (2,3) > (2,2)
+
+// because:
+
+// 3 > 2
