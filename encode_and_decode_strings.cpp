@@ -33,7 +33,7 @@ public:
         }
         return result;
     }
-}; // <-- this semicolon was missing
+}; 
 
 int main() {
     Solution sol;
