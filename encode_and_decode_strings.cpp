@@ -52,5 +52,4 @@ int main() {
 
     cout << "Match: " << (strs == decoded ? "true" : "false") << endl;
 
-    return 0;
-}
+    return 0;}
