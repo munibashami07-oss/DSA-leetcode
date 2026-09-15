@@ -22,5 +22,10 @@ int main()
   s3.roll_no=103;
   s4.name="ALi";
   s4.roll_no=104;
+s1.display();
+      s2.display();
+        s3.display();
+          s4.display();
+
     return 0;
 }
