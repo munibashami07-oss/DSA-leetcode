@@ -17,20 +17,25 @@ void FindMiddle(Node*& head , int count ){
          Node * current = head;
 
         if(count%2==0){
-count = count/2;
+        count = count/2;
+        for (int n = 1 ; n<count ; n++) 
+        {
+            current = current->next ;
+        }
+         cout<<"Middle nodes are "<<count<<"\t"<<current->word<<"\n";
+         current = current->next ;
+         cout<<"Middle nodes are "<<count+1<<"\t"<<current->word<<endl;
 
         }
         else{ count = count/2;
-        count=count+1;    
-cout<<count;
-        
-        }
-
        
-
-    }
-
-}
+        for (int n = 0; n<count ; n++) //0 1
+        {
+            current = current->next; //2 3
+        }
+         cout<<"Middle node is"<<count+1<<"\t"<<current->word;
+        }
+    }}
 
 int main()
 {
