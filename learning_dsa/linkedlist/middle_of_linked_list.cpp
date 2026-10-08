@@ -9,7 +9,28 @@ class Node{
         word=w;
         next = nullptr;
     }};
+void FindMiddle(Node*& head , int count ){
+    if(count == 0 || count == 1 || count == 2){
+        cout<<"theres no middle";
+    }
+    else{
+         Node * current = head;
 
+        if(count%2==0){
+count = count/2;
+
+        }
+        else{ count = count/2;
+        count=count+1;    
+cout<<count;
+        
+        }
+
+       
+
+    }
+
+}
 
 int main()
 {
@@ -36,6 +57,6 @@ int main()
         }
         count++;
     }
-    cout<<count;
+    FindMiddle(head , count);
     return 0;
 }
