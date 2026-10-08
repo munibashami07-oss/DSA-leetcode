@@ -87,8 +87,8 @@ int main() {
             tail = newNode;
         }
         else {
-            head->next = newNode;
-            head = newNode;
+            tail->next = newNode;
+            tail = newNode;
         }
     }
 
