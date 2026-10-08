@@ -63,7 +63,7 @@ void showRecent(Node*& head, int k) {
 int main() {
 
     Node* head = nullptr;
-    Node* tail = nullptr;
+    Node*  current = nullptr;
 
     int n;
 
@@ -84,11 +84,11 @@ int main() {
 
         if (head == nullptr) {
             head = newNode;
-            tail = newNode;
+         current= newNode;
         }
         else {
-            tail->next = newNode;
-            tail = newNode;
+            current->next = newNode;
+            current = newNode;
         }
     }
 
