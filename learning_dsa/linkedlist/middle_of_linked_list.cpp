@@ -34,8 +34,8 @@ cout<<count;
 
 int main()
 {
-    Node * head ;
-    Node * curr ;
+    Node * head = nullptr ; //initialize them or the loop wont  run 
+    Node * curr = nullptr ; //initialize them or the loop wont  run 
     string word; 
     int count =0;
     cout<< " Enter the nodes (to exit press 0 ) : "<<endl;
