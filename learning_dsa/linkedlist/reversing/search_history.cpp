@@ -102,11 +102,11 @@ int main() {
     // Check that original list is still unchanged
     cout << "\nOriginal Search History:\n";
 
-    Node* current = head;
+    Node* curr = head;
 
-    while (current != nullptr) {
-        cout << current->word << " -> ";
-        current = current->next;
+    while (curr != nullptr) {
+        cout << curr->word << " -> ";
+        curr = curr->next;
     }
 
     cout << "NULL\n";
