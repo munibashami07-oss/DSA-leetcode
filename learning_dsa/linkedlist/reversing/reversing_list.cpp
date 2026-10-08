@@ -64,3 +64,9 @@ int main()
 
     return 0;
 }
+// Weak Spot Radar
+// Seeing the arrows: people picture the nodes moving, but only the pointers change.
+// Losing the tail of the list: the usual bug is overwriting next before saving it.
+// Mixing up the returns: you return prev, not curr or head.
+// Recursion: most people can write it but can't explain the unwinding order.
+// Trusting the invariant: if you can't state what prev and curr represent at every iteration, you're memorizing, not understanding.
