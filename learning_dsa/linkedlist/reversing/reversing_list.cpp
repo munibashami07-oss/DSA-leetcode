@@ -30,7 +30,7 @@ class Linkedlist {
     }
 
     //reverse the linked list
-   void reverse(){
+   Node* reverse(){
         Node  *prev = nullptr;
         Node * curr = head;
         while (curr != nullptr){
@@ -40,6 +40,7 @@ class Linkedlist {
             curr = nxt;
         }
         head = prev ; 
+        return prev;
    }
 
    void display (){
