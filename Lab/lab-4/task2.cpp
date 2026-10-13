@@ -11,13 +11,13 @@ class Node{
     }
 
 };
-void count (Node *& head){
+int count (Node *& head){
 int count  = 0;
 Node * current = head ; 
 while (current->next != head){
     count++;
 }
-cout<<count ; 
+return count ; 
 }
 int main()
 {
@@ -39,6 +39,6 @@ int main()
 cout<<n1->data<<"->"<<n1->next->data<<"->"<<n1->next->next->data<<"->"<<n1->next->next->next->data<<"->"<<n1->next->next->next->next->data<<"->"<<n1->next->next->next->next->next->data<<endl;
 
 cout<<"counting nodes now"<<endl;
-count(head);
+cout<<count(head);
     return 0;
 }
