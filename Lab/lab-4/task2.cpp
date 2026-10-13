@@ -12,10 +12,11 @@ class Node{
 
 };
 int count (Node *& head){
-int count  = 0;
+int count  = 1;
 Node * current = head ; 
 while (current->next != head){
     count++;
+    current=current->next;
 }
 return count ; 
 }
