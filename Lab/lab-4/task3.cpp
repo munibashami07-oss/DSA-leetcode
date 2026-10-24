@@ -37,7 +37,7 @@ int main()
          n4->next = n5;
          n5->next = head;
 
-cout<<n1->data<<"->"<<n1->next->data<<"->"<<n1->next->next->data<<"->"<<n1->next->next->next->data<<"->"<<n1->next->next->next->next->data<<"->"<<n1->next->next->next->next->next->data<<endl;
+cout<<n1->data<<"->"<<n1->next->data<<"->"<<n1->next->next->data<<"->"<<n1->next->next->next->data<<"->"<<n1->next->next->next->next->data<<endl;
 
 cout<<"Enter the element u want to search : "<<endl;
 int search ;
