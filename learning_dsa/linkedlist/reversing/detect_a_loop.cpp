@@ -27,11 +27,11 @@ while ( fast!=nullptr && fast ->next !=nullptr)
 return false;
 } 
 int main()
-{   Node * head = nullptr ; 
+{   Node * head = new Node(0) ; 
     Node * current = nullptr;
     current = head;
     // create nodes
-    for(int i = 0 ; i <5 ; i++){
+    for(int i = 1; i <=5 ; i++){
       current->next= new Node(i);
       current = current->next ; 
     }    
