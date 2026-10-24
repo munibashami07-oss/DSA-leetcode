@@ -14,15 +14,13 @@ class Node{
 bool loopdetect(Node * & head){
 Node * fast = head;
 Node * slow = head;
-Node * current = head;
 while ( fast!=nullptr && fast ->next !=nullptr)
 {
-    fast=current->next->next;
-    slow= current->next;
+    fast=fast->next->next;
+    slow= slow->next;
     if(fast==slow){
         return true;
     }
-    current=current->next;
 }
 return false;
 } 
