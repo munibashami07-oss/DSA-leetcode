@@ -29,6 +29,4 @@ int main()
 
 cout<<n1->data<<"->"<<n1->next->data<<"->"<<n1->next->next->data<<"->"<<n1->next->next->next->data<<"->"<<n1->next->next->next->next->data<<"->"<<n1->next->next->next->next->next->data<<endl;
 
-
-    return 0;
 }
