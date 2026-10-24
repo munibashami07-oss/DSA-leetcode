@@ -24,7 +24,7 @@ while ( fast!=nullptr && fast ->next !=nullptr)
     }
     current=current->next;
 }
-current = current->next;
+return 0;
 } 
 int main()
 {   Node * head = nullptr ; 
