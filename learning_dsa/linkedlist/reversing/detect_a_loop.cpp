@@ -20,11 +20,11 @@ while ( fast!=nullptr && fast ->next !=nullptr)
     fast=current->next->next;
     slow= current->next;
     if(fast==slow){
-        return 1;
+        return true;
     }
     current=current->next;
 }
-return 0;
+return false;
 } 
 int main()
 {   Node * head = nullptr ; 
