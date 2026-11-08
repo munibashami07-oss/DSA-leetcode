@@ -51,11 +51,20 @@ void bubbleSort(Node* head) {
     cout << "Swaps: " << swaps << endl;
 }
 int main(){
-    int keys[]={30,12,25,8,20};
-   Node * n1 (30);
-    Node * head ; 
-  head = n1 ; 
-  
+ 
+Node * head ;
+Node *n1 = new Node(30);
+Node *n2 = new Node (12);
+Node * n3 = new Node ( 25);
+Node * n4 = new Node (8);
+Node * n5 = new Node ( 25);
+n1->nxt = n2;
+n2->nxt = n3;
+n3->nxt = n4; 
+n4->nxt = n5;
+head = n1;
+bubbleSort(head);
+
 
 
 }
