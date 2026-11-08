@@ -26,7 +26,8 @@ void bubbleSort(Node* head) {
     int swaps = 0;
 
     Node* curr = head;
-
+    int i = 0 ;
+while (i <1 ){
     // First pass only
     while (curr != nullptr && curr->nxt != nullptr) {
 
@@ -49,7 +50,8 @@ void bubbleSort(Node* head) {
 
     cout << "Comparisons: " << comparisons << endl;
     cout << "Swaps: " << swaps << endl;
-}
+    i++;
+}}
 int main(){
  
 Node * head ;
