@@ -15,8 +15,10 @@ class LinkedList
 private:
 Node* head;
 int  i =0 ;
+
 void splitList(Node* source, Node*& left, Node*& right)
 {
+    i++;
 Node* slow = source;
 Node* fast = source->next;
 while (fast!= NULL)
@@ -31,7 +33,7 @@ fast = fast->next;
 left = source;
 right = slow->next;
 slow->next = NULL;
-cout<<"run "<<i<<"split list node is "<<left->data<<" and "<<right->data;
+cout<<"run "<<i<<"split list node is "<<left->data<<" and "<<right->data<<endl;
 }
 Node* mergeSortedLists(Node* left, Node* right)
 { if(left == NULL)
@@ -43,12 +45,12 @@ if(left->data <= right->data)
 {
 result = left;
 result->next = mergeSortedLists(left->next, right);
-cout<<"now list is  "<<result->next->data;
+cout<<"now list is  "<<result->next->data<<endl;
 }
 else
 { result = right;
 result->next = mergeSortedLists(left, right->next);
-cout<<"now list is  "<<result->next->data;
+cout<<"now list is  "<<result->next->data<<endl;
 }
 return result;
 }
@@ -61,7 +63,7 @@ Node* right = NULL;
 splitList(start, left, right);
 left = mergeSortRec(left);
 right = mergeSortRec(right);
-cout<<"at mergesortrec "<<left->data<<" "<<right->data;
+cout<<"at mergesortrec "<<left->data<<" "<<right->data<<endl;
 return mergeSortedLists(left, right);
 }
 public:
