@@ -131,7 +131,7 @@ private:
         lessHead = quickSortRec(lessHead);
         greaterHead = quickSortRec(greaterHead);
 
-        return concatenate(lessHead, equalHead, greaterHead);
+        return concatenate(greaterHead, equalHead, lessHead);
     }
 
 public:
