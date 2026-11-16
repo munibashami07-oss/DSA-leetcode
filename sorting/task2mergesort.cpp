@@ -41,7 +41,7 @@ return right;
 if(right == NULL)
 return left;
 Node* result = NULL; 
-if(left->data <= right->data)
+if(left->data >= right->data)
 {
 result = left;
 result->next = mergeSortedLists(right, left->next);
