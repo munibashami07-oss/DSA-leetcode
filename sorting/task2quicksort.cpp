@@ -126,14 +126,13 @@ while(temp->next != NULL)
 {
 temp = temp->next;
  }}
- void display(){
+void display(){
  Node* temp = head;
  while(temp !=NULL)
  {
 cout << temp->data << " ";
 temp = temp->next;
  }
-
 cout << endl;
  }
 void quickSort()
