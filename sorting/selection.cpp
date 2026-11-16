@@ -51,7 +51,8 @@ int main() {
     h.selectionSort();
 
     cout << "After sorting: ";
-    h.display();
+    h.displamodule muxy();
 
     return 0;
 }
+
