@@ -31,7 +31,7 @@ fast = fast->next;
 left = source;
 right = slow->next;
 slow->next = NULL;
-cout<<"run "<<i<<"split list node is "<<left<<" and "<<right;
+cout<<"run "<<i<<"split list node is "<<left->data<<" and "<<right->data;
 }
 Node* mergeSortedLists(Node* left, Node* right)
 { if(left == NULL)
@@ -43,12 +43,12 @@ if(left->data <= right->data)
 {
 result = left;
 result->next = mergeSortedLists(left->next, right);
-cout<<"now list is  "<<result->next;
+cout<<"now list is  "<<result->next->data;
 }
 else
 { result = right;
 result->next = mergeSortedLists(left, right->next);
-cout<<"now list is  "<<result->next;
+cout<<"now list is  "<<result->next->data;
 }
 return result;
 }
@@ -61,7 +61,7 @@ Node* right = NULL;
 splitList(start, left, right);
 left = mergeSortRec(left);
 right = mergeSortRec(right);
-cout<<"at mergesortrec "<<left<<" "<<right;
+cout<<"at mergesortrec "<<left->data<<" "<<right->data;
 return mergeSortedLists(left, right);
 }
 public:
