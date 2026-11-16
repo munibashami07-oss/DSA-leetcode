@@ -44,12 +44,12 @@ Node* result = NULL;
 if(left->data <= right->data)
 {
 result = left;
-result->next = mergeSortedLists(left->next, right);
+result->next = mergeSortedLists(right, left->next);
 cout<<"now list is  "<<result->next->data<<endl;
 }
 else
 { result = right;
-result->next = mergeSortedLists(left, right->next);
+result->next = mergeSortedLists(right->next, left);
 cout<<"now list is  "<<result->next->data<<endl;
 }
 return result;
